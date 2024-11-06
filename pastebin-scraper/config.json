@@ -1,0 +1,393 @@
+{
+    "discordWebhooks": {
+        "all":"",
+        "discordToken":"",
+        "files":"",
+        "combo":"",
+        "proxy":""
+    },
+    "matches": [
+        {
+            "collections": [
+                "all"
+            ],
+            "name": "database dump",
+            "type": "text",
+            "match": "-- phpMyAdmin SQL Dump"
+        },
+{
+"collections":[],
+"name": "ntm iptv",
+"type":"text",
+"match":"#EXTM3U"
+},
+        {
+            "collections": [
+                "all"
+            ],
+            "name": "database dump",
+            "type": "text",
+            "match": "-- MySQL dump"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "name": "database dump",
+            "type": "text",
+            "match": "-- PostgreSQL database dump"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "name": "OPENSSH private key",
+            "type": "text",
+            "match": "-----BEGIN OPENSSH PRIVATE KEY----"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "name": "DSA private key",
+            "type": "text",
+            "match": "-----BEGIN DSA PRIVATE KEY----"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "name": "RSA private key",
+            "type": "text",
+            "match": "-----BEGIN RSA PRIVATE KEY----"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "name": "EC private key",
+            "type": "text",
+            "match": "-----BEGIN EC PRIVATE KEY----"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "(A3T[A-Z0-9]|AKIA|AGPA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}",
+            "name": "AWS Access Key ID Value"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "(?i)artifactory.{0,50}(\\\"|'|`)?[a-zA-Z0-9=]{112}(\\\"|'|`)?",
+            "name": "Artifactory"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "(?i)codeclima.{0,50}(\\\"|'|`)?[0-9a-f]{64}(\\\"|'|`)?",
+            "name": "CodeClimate"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "EAACEdEose0cBA[0-9A-Za-z]+",
+            "name": "Facebook access token"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "((\\\"|'|`)?type(\\\"|'|`)?\\\\s{0,50}(:|=>|=)\\\\s{0,50}(\\\"|'|`)?service_account(\\\"|'|`)?,?)",
+            "name": "Google (GCM) Service account"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "(?:r|s)k_[live|test]_[0-9a-zA-Z]{24}",
+            "name": "Stripe API key"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com",
+            "name": "Google OAuth Key"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "AIza[0-9A-Za-z\\\\-_]{35}",
+            "name": "Google Cloud API Key"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "ya29\\\\.[0-9A-Za-z\\\\-_]+",
+            "name": "Google OAuth Access Token"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "sk_[live|test]_[0-9a-z]{32}",
+            "name": "Picatic API key"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "sq0atp-[0-9A-Za-z\\-_]{22}",
+            "name": "Square Access Token"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "sq0csp-[0-9A-Za-z\\-_]{43}",
+            "name": "Square OAuth Secret"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "access_token\\$production\\$[0-9a-z]{16}\\$[0-9a-f]{32}",
+            "name": "PayPal/Braintree Access Token"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "amzn\\.mws\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}",
+            "name": "Amazon MWS Auth Token"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "SK[0-9a-fA-F]{32}",
+            "name": "Twilo API Key"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "key-[0-9a-zA-Z]{32}",
+            "name": "MailGun API Key"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "[0-9a-f]{32}-us[0-9]{12}",
+            "name": "MailChimp API Key"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "sshpass -p.*['|\\\"]",
+            "name": "SSH Password"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "(https\\\\://outlook\\\\.office.com/webhook/[0-9a-f-]{36}\\\\@)",
+            "name": "Outlook team"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "(?i)sauce.{0,50}(\\\"|'|`)?[0-9a-f-]{36}(\\\"|'|`)?",
+            "name": "Sauce Token"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "(xox[pboa]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})",
+            "name": "Slack Token"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "https://hooks.slack.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}",
+            "name": "Slack Webhook"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "(?i)sonar.{0,50}(\\\"|'|`)?[0-9a-f]{40}(\\\"|'|`)?",
+            "name": "SonarQube Docs API Key"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "(?i)hockey.{0,50}(\\\"|'|`)?[0-9a-f]{32}(\\\"|'|`)?",
+            "name": "HockeyApp"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "(\\w+?://\\S+?:\\S+?@[\\w\\.]+)",
+            "name": "Username and password in URI"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "type": "regex",
+            "regex": "oy2[a-z0-9]{43}",
+            "name": "NuGet API Key"
+        },
+        {
+            "collections": [
+                "all", "discordToken"
+            ],
+            "type": "regex",
+            "regex": "[a-zA-Z0-9]{24}\\.[XD][a-zA-Z0-9\\_]{5}\\.[a-zA-Z0-9\\_\\-]{27}",
+            "name": "discord token"
+        },
+        {
+            "collections": [
+                "all", "combo"
+            ],
+            "name": "combolist",
+            "type": "regex",
+            "regex": "([\\w\\-\\+\\.]{1,100}@[\\w\\-]{1,20}\\.[\\.\\w\\-]{2,4}[\\;\\:\\|][^\\\"\\'\\r\\t\\n \\\\]{2,50})"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "name": "discord webhook",
+            "type": "regex",
+            "regex": "http[s]?:\\/\\/discordapp.com\\/api\\/webhooks\\/[0-9]+\\/[a-zA-Z0-9\\_\\-]{68}"
+        },
+        {
+            "collections": [
+                "all", "discordToken"
+            ],
+            "name": "discord mfa token",
+            "type": "regex",
+            "regex": "mfa\\.[a-zA-Z0-9\\_\\-]{84}"
+        },
+        {
+            "collections": [
+                "all", "proxy"
+            ],
+            "name": "proxies",
+            "type": "regex",
+            "regex": "(\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b:\\d{2,5})\\s+(?(1)(\\b(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b:\\d{2,5}))"
+        },
+        {
+            "collections": [
+                "all", "files"
+            ],
+            "name": "mega file",
+            "type": "regex",
+            "regex": "http[s]?:\\/\\/mega\\.nz\\/\\#F![a-zA-Z0-9\\-\\_]{8}(![a-zA-Z0-9\\-\\_]{22})?(![a-zA-Z0-9\\-\\_]{8})?"
+        },
+        {
+            "collections": [
+                "all", "files"
+            ],
+            "name": "anonfile (or clone) file",
+            "type": "regex",
+            "regex": "http[s]?:\\/\\/(anonfile.com|letsupload.cc|share-online.is|megaupload.is)\\/[a-zA-Z0-9]{10}"
+        },
+        {
+            "collections": [
+                "all", "files"
+            ],
+            "name": "mediafire file",
+            "type": "regex",
+            "regex": "http[s]?:\\/\\/(www\\.)?mediafire\\.com\\/(download|file|view)\\/[a-zA-Z0-9]{15}(\\/[\\w\\.\\-\\%]+)?"
+        },
+        {
+            "collections": [
+                "all","files"
+            ],
+            "name": "zippyshare file",
+            "type": "regex",
+            "regex": "http[s]?:\\/\\/www[0-9]{1,3}\\.zippyshare\\.com\\/v\\/[a-zA-Z0-9]{8}\\/file\\.html"
+        },
+        {
+            "collections": [
+                "all", "files"
+            ],
+            "name": "mega file",
+            "type": "regex",
+            "regex": "mega://#!([^\\n\\t\\r\"' ]+)"
+        },
+        {
+            "collections": [
+                "all", "files"
+            ],
+            "name": "torrent",
+            "type": "regex",
+            "regex": "magnet:\\?xt=urn:btih:[0-9a-z]{40}&dn=[^\\n\\r\\t ]+&tr="
+        },
+        {
+            "collections": [
+                "all", "files"
+            ],
+            "name": "google drive filefolder",
+            "type": "regex",
+            "regex": "http[s]?:\\/\\/(?:gplinks\\.in/|drive\\.google\\.com/)(?:open\\?id=|drive/folders/|drive/mobile/folders/|(?:uc\\?|uc\\?export=(?:download|view)&|folderview\\?)?id=|file/d/|drive/u/0/mobile/folders/|drive/u/0/folders/|a/)[a-zA-Z0-9-_]+"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "name": "minecraft login",
+            "type": "regex",
+            "regex": " INFO]: [a-zA-Z0-9\\-\\_]+\\[\/[0-9]+.[0-9]+.[0-9]+.[0-9]+:[0-9]+\\] logged"
+        },
+        {
+            "collections": [
+                "all"
+            ],
+            "name": "onion sites",
+            "type": "regex",
+            "regex": "([a-zA-Z0-9]+\\.){1,}onion"
+        }
+    ]
+}

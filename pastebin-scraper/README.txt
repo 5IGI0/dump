@@ -1,0 +1,1 @@
+a pastebin scrapper i made in 2019 (when i was 16)
